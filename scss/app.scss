@@ -1,0 +1,112 @@
+@import 'base';
+@import 'fonts';
+@import 'layouts';
+@import 'links';
+@import 'icons';
+@import 'header';
+@import 'navbar';
+@import 'footer';
+
+// slider styles
+.slider{
+    position: relative;
+    top: -30px;
+
+    #slide-one{
+        width: 100%;
+        height: 700px;
+        background-image: url(../images/slider/home-slide-1.jpg);
+        background-size: cover;
+        .slider-text{
+            @include section-text;
+            height: 100%;
+            color: #fff;
+
+            h3{ font-size: $font_size_title;}
+            h1{ font-size: $font_size_lg;}
+            p{  font-size: $font_size_md;
+                font-family: "primary-font";}
+
+            a{
+                @include reset-links;
+                display: inline-block;
+                color: #fff;
+                font-size: 1.5rem;
+                background-color: $color_green;
+                border-radius: 50px;
+                padding: 20px 50px;
+                margin-top: 30px;
+                cursor: pointer;
+                &:hover{
+                    background-color: $color_light_primary;
+                }
+            }
+        }
+    }
+}
+// End slider styles
+
+// Menu
+.menu{
+    width: 100%;
+    background-image: url(../images/index/menu-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    h3{
+        @include section-text;
+        font-size: $font_size_lg;
+        color: #fff;
+    }
+
+    .menu-container{
+        @include flex-center;
+        gap: 40px;
+        flex-wrap: wrap;
+
+        .menu-tumbnail{
+            @include tumbnail;
+            width:350px;
+            position: relative;
+
+            .menu-img{
+                object-fit: cover;
+                width: 270px;
+                margin: 0 40px;
+            }
+
+            .menu-caption{
+                height: 80px;
+                border-radius: 0 0 5px 5px;
+                background-color: $color_green;
+                border-right: 350px solid $color_green;
+                border-top: 30px solid #fff;
+                transition: all 200ms ease;
+            }
+            .menu-caption-hover{
+                border-top-color: transparent;
+            }
+
+            .menu-title{
+                @include reset-links;
+                color: #fff;
+                font-family: "secondary-font";
+                font-size: $font_size_md;
+
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+
+                width: 25%;
+                text-align: center;
+                transition: all 200ms ease;
+            }
+
+            .menu-title-hover{
+                width: 100%;
+                right: 0px;
+            }
+        }
+    }
+}
+// End Menu

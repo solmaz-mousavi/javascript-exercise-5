@@ -1,0 +1,30 @@
+// header styles
+.header{
+    @include flex-spacebetween;
+    height: 100px;
+
+    .header-left{
+        @include flex-row;
+
+        .header-item{
+            @include flex-row;
+            padding: 10px 20px;
+            
+            .header-item-link{
+                @include reset-links();
+                color: $color_gray;
+                font-family: "primary-font";
+                &:hover{
+                    color: $color_primary;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

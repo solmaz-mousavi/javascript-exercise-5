@@ -1,0 +1,44 @@
+// navbar styles
+.navbar{
+    @include flex-spacebetween;
+    background-color: $color_primary;
+    border-radius: 50px;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+    .navbar-right ul{
+        @include reset-lists;
+        @include flex-row;
+
+        .navbar-link{
+            @include reset-links;
+            padding: 3px 10px;
+            margin: 0 20px;
+            font-family: "primary-font";
+            color: #fff;
+        };
+
+        li .active{
+            background-color: $color_light_primary;
+        }
+    };
+
+    .navbar-left a{
+        @include reset-links;
+
+        span{
+        color: #fff;
+        font-size: $icon_size;
+        font-family: "primary-font";
+        }
+    }
+}
+
+.navbar-sticky{
+    width: 100%;
+    border-radius: 0px;
+    padding:10px calc(12.5% + 50px);
+}
+

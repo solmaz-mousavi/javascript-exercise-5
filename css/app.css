@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "primary-font";
+  src: url("../fonts/farsi-fonts/iran-yekan-500.eot");
+  src: url("../fonts/farsi-fonts/iran-yekan-500.eot?#iefix") format("embedded-opentype"), url("../fonts/farsi-fonts/iran-yekan-500.woff2") format("woff2"), url("../fonts/farsi-fonts/iran-yekan-500.woff") format("woff"), url("../fonts/farsi-fonts/iran-yekan-500.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "secondary-font";
+  src: url("../fonts/farsi-fonts/pinar-700.eot");
+  src: url("../fonts/farsi-fonts/pinar-700.eot?#iefix") format("embedded-opentype"), url("../fonts/farsi-fonts/pinar-700.woff2") format("woff2"), url("../fonts/farsi-fonts/pinar-700.woff") format("woff"), url("../fonts/farsi-fonts/pinar-700.ttf") format("truetype");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 50px 0;
+}
+
+.section-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "secondary-font";
+}
+.section-text h3,
+.section-text h1 {
+  font-size: 5rem;
+}
+.section-text p {
+  font-family: "primary-font";
+  color: #9b9b9b;
+}
+
+.title {
+  position: relative;
+  top: -30px;
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/slider/home-slide-1.jpg);
+  background-size: cover;
+}
+.title .title-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "secondary-font";
+  height: 100%;
+  color: #fff;
+}
+.title .title-text h1 {
+  font-size: 5rem;
+}
+.title .title-text p {
+  font-size: 1.2rem;
+  font-family: "primary-font";
+}
+
+.header-item-icon {
+  box-sizing: content-box;
+  width: 32px;
+  border: 5px solid rgb(211, 211, 214);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.header-icon-link {
+  color: rgb(211, 211, 214);
+  margin: 0 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.header-icon-link:hover {
+  color: rgb(241, 97, 33);
+}
+
+.navbar-icon {
+  color: rgb(43, 44, 47);
+  margin: 0 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.navbar-icon:hover {
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.header .header-left {
+  display: flex;
+}
+.header .header-left .header-item {
+  display: flex;
+  padding: 10px 20px;
+}
+.header .header-left .header-item .header-item-link {
+  text-decoration: none;
+  color: rgb(43, 44, 47);
+  font-family: "primary-font";
+}
+.header .header-left .header-item .header-item-link:hover {
+  color: rgb(241, 97, 33);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(241, 97, 33);
+  border-radius: 50px;
+  padding: 10px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.navbar .navbar-right ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+.navbar .navbar-right ul .navbar-link {
+  text-decoration: none;
+  padding: 3px 10px;
+  margin: 0 20px;
+  font-family: "primary-font";
+  color: #fff;
+}
+.navbar .navbar-right ul li .active {
+  background-color: rgb(236, 182, 159);
+}
+.navbar .navbar-left a {
+  text-decoration: none;
+}
+.navbar .navbar-left a span {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "primary-font";
+}
+
+.navbar-sticky {
+  width: 100%;
+  border-radius: 0px;
+  padding: 10px calc(12.5% + 50px);
+}
+
+.slider {
+  position: relative;
+  top: -30px;
+}
+.slider #slide-one {
+  width: 100%;
+  height: 700px;
+  background-image: url(../images/slider/home-slide-1.jpg);
+  background-size: cover;
+}
+.slider #slide-one .slider-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "secondary-font";
+  height: 100%;
+  color: #fff;
+}
+.slider #slide-one .slider-text h3 {
+  font-size: 2rem;
+}
+.slider #slide-one .slider-text h1 {
+  font-size: 5rem;
+}
+.slider #slide-one .slider-text p {
+  font-size: 1.2rem;
+  font-family: "primary-font";
+}
+.slider #slide-one .slider-text a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #bfdb39;
+  border-radius: 50px;
+  padding: 20px 50px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.slider #slide-one .slider-text a:hover {
+  background-color: rgb(236, 182, 159);
+}
+
+.menu {
+  width: 100%;
+  background-image: url(../images/index/menu-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.menu h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "secondary-font";
+  font-size: 5rem;
+  color: #fff;
+}
+.menu .menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.menu .menu-container .menu-tumbnail {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px #9b9b9b;
+  width: 350px;
+  position: relative;
+}
+.menu .menu-container .menu-tumbnail .menu-img {
+  object-fit: cover;
+  width: 270px;
+  margin: 0 40px;
+}
+.menu .menu-container .menu-tumbnail .menu-caption {
+  height: 80px;
+  border-radius: 0 0 5px 5px;
+  background-color: #bfdb39;
+  border-right: 350px solid #bfdb39;
+  border-top: 30px solid #fff;
+  transition: all 200ms ease;
+}
+.menu .menu-container .menu-tumbnail .menu-caption-hover {
+  border-top-color: transparent;
+}
+.menu .menu-container .menu-tumbnail .menu-title {
+  text-decoration: none;
+  color: #fff;
+  font-family: "secondary-font";
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 25%;
+  text-align: center;
+  transition: all 200ms ease;
+}
+.menu .menu-container .menu-tumbnail .menu-title-hover {
+  width: 100%;
+  right: 0px;
+}/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,12 @@
+// links and lists reset styles
+@mixin reset-links{
+    text-decoration: none;
+}
+
+@mixin reset-lists{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+

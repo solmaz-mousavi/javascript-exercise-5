@@ -1,0 +1,29 @@
+// icon styles
+
+.header-item-icon{
+    box-sizing: content-box;
+    width: 32px;
+    border: 5px solid $color_light_gray;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.header-icon-link{
+    color: $color_light_gray;
+    margin: 0 5px;
+    font-size: $icon_size;
+    cursor: pointer;
+    &:hover{
+        color: $color_primary;
+    }
+}
+
+.navbar-icon{
+    color: $color_gray;
+    margin: 0 5px;
+    font-size: $icon_size;
+    cursor: pointer;
+    &:hover{
+        color: #fff
+    }
+}
